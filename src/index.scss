@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    p {
+        @apply text-gray-700;
+    }
+
+    form {
+        label {
+            @apply text-xl;
+        }
+
+        input {
+            @apply border border-gray-400 rounded-md px-4 py-2;
+        }
+
+        textarea {
+            @apply border border-gray-400 rounded-md px-4 py-2 h-40 resize-none;
+        }
+
+        div {
+            @apply flex flex-col gap-2;
+        }
+    }
+}
+
+@layer components {
+    .btn {
+        @apply px-6 py-2 rounded-md hover:shadow-md transition duration-100 ease-in-out;
+    }
+
+    .btn-primary {
+        @apply bg-black text-white font-semibold tracking-wide hover:bg-inherit hover:outline hover:outline-[1px] hover:outline-black hover:text-black;
+    }
+}
+
