@@ -2,12 +2,12 @@ import sideImage from "/assets/WhatWeOffer/side_image.jpg"
 
 function WhatWeOffer() {
   return (
-    <div className="h-[80vh] w-full py-20 flex flex-col justify-center items-center gap-10">
+    <div className="md:h-[80vh] w-full py-20 flex flex-col justify-center items-center gap-10">
       <div className="flex justify-center items-center text-4xl font-bold">
         <h2>What we offer</h2>
       </div>
-      <div className="h-full w-full flex flex-row justify-center items-center">
-        <div className="h-full w-full p-20 flex justify-center items-center">
+      <div className="h-full w-full flex flex-col-reverse md:flex-row justify-center items-center">
+        <div className="h-full w-full p-6 md:p-20 flex justify-center items-center">
           <p>
             Our company provides a wide range of products and services to meet
             the needs of our customers. We offer high-quality products at
